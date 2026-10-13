@@ -5,6 +5,8 @@ easy-to-read files:
   - teams.csv     : team strength ratings (for fixture difficulty)
   - fixtures.csv  : upcoming fixtures with difficulty ratings
   - meta.json      : current/next gameweek + last-updated timestamp
+  - history.csv    : one row per player per match played (home/away, minutes,
+                     points, xG/xA, team score) for venue and with/without splits
 
 Run manually with: python fetch_fpl.py
 Designed to be run automatically by the GitHub Actions workflow
@@ -13,6 +15,8 @@ in .github/workflows/update-fpl-data.yml
 
 import csv
 import json
+import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 import requests
@@ -21,10 +25,16 @@ BASE = "https://fantasy.premierleague.com/api"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 
-def fetch_json(url):
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    return r.json()
+def fetch_json(url, retries=3):
+    for attempt in range(retries):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            r.raise_for_status()
+            return r.json()
+        except requests.RequestException:
+            if attempt == retries - 1:
+                raise
+            time.sleep(2 * (attempt + 1))
 
 
 def write_players(data, teams, positions):
@@ -99,6 +109,68 @@ def write_meta(data):
         json.dump(meta, f, indent=2)
 
 
+HISTORY_FIELDS = [
+    "player_id", "web_name", "team", "position", "gameweek", "kickoff_time",
+    "opponent", "was_home", "team_scored", "team_conceded", "minutes", "starts",
+    "total_points", "goals_scored", "assists", "clean_sheets", "bonus", "bps",
+    "influence", "creativity", "threat", "ict_index", "expected_goals",
+    "expected_assists", "expected_goal_involvements", "expected_goals_conceded",
+    "value_m",
+]
+
+
+def fetch_player_history(player):
+    """Per-match history for one player, or [] if the request fails."""
+    try:
+        data = fetch_json(f"{BASE}/element-summary/{player['id']}/")
+    except requests.RequestException:
+        return None
+    return data.get("history", [])
+
+
+def history_rows(player, h, teams, positions):
+    was_home = bool(h.get("was_home"))
+    h_score, a_score = h.get("team_h_score"), h.get("team_a_score")
+    if h_score is None or a_score is None:
+        scored = conceded = ""
+    else:
+        scored, conceded = (h_score, a_score) if was_home else (a_score, h_score)
+    return [
+        player["id"], player["web_name"], teams.get(player["team"], ""),
+        positions.get(player["element_type"], ""), h.get("round"),
+        h.get("kickoff_time"), teams.get(h.get("opponent_team"), ""),
+        int(was_home), scored, conceded, h.get("minutes"), h.get("starts", ""),
+        h.get("total_points"), h.get("goals_scored"), h.get("assists"),
+        h.get("clean_sheets"), h.get("bonus"), h.get("bps"),
+        h.get("influence"), h.get("creativity"), h.get("threat"),
+        h.get("ict_index"), h.get("expected_goals", ""),
+        h.get("expected_assists", ""), h.get("expected_goal_involvements", ""),
+        h.get("expected_goals_conceded", ""),
+        (h.get("value") or 0) / 10,
+    ]
+
+
+def write_history(data, teams, positions):
+    """Pull element-summary for everyone who has played; skip if it all fails."""
+    players = [p for p in data["elements"] if p["minutes"] > 0]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        results = list(pool.map(fetch_player_history, players))
+
+    failed = sum(1 for r in results if r is None)
+    # If most requests failed, keep the previous history.csv rather than overwrite it
+    if failed > len(players) * 0.2:
+        print(f"history: {failed}/{len(players)} requests failed - keeping old file")
+        return
+
+    with open("history.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(HISTORY_FIELDS)
+        for player, hist in zip(players, results):
+            for h in hist or []:
+                writer.writerow(history_rows(player, h, teams, positions))
+    print(f"history: wrote {len(players) - failed} players ({failed} failed)")
+
+
 def main():
     data = fetch_json(f"{BASE}/bootstrap-static/")
     teams = {t["id"]: t["short_name"] for t in data["teams"]}
@@ -108,6 +180,7 @@ def main():
     write_teams(data)
     write_fixtures(teams)
     write_meta(data)
+    write_history(data, teams, positions)
 
 
 if __name__ == "__main__":
