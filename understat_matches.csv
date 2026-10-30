@@ -1,0 +1,381 @@
+id,datetime,is_result,home,away,goals_h,goals_a,xg_h,xg_a
+31180,2026-08-21 19:00:00,True,Arsenal,Coventry,3,0,1.85424,0.558336
+31181,2026-08-22 11:30:00,True,Hull,Manchester United,2,0,1.49627,1.77874
+31182,2026-08-22 14:00:00,True,Everton,Crystal Palace,2,0,1.45085,2.23095
+31183,2026-08-22 14:00:00,True,Ipswich,Sunderland,2,1,1.58452,1.17743
+31184,2026-08-22 14:00:00,True,Nottingham Forest,Leeds,0,1,0.656681,0.466247
+31185,2026-08-22 16:30:00,True,Brentford,Tottenham,3,0,4.04155,0.756284
+31186,2026-08-23 13:00:00,True,Brighton,Aston Villa,4,0,4.00327,0.275249
+31187,2026-08-23 13:00:00,True,Manchester City,Bournemouth,2,1,2.47444,0.707541
+31188,2026-08-23 15:30:00,True,Newcastle United,Liverpool,2,2,1.59465,3.13133
+31189,2026-08-24 19:00:00,True,Fulham,Chelsea,2,3,1.41707,2.58384
+31190,2026-08-28 19:00:00,True,Crystal Palace,Manchester City,1,4,0.926624,2.56662
+31191,2026-08-29 11:30:00,True,Liverpool,Nottingham Forest,2,2,1.27921,2.87937
+31192,2026-08-29 14:00:00,True,Coventry,Hull,0,1,1.18233,0.459726
+31193,2026-08-29 14:00:00,True,Bournemouth,Everton,1,1,2.25803,1.66352
+31194,2026-08-29 16:30:00,True,Tottenham,Newcastle United,0,2,1.12037,1.00952
+31195,2026-08-30 13:00:00,True,Sunderland,Fulham,1,0,1.56229,1.02405
+31196,2026-08-30 13:00:00,True,Chelsea,Brighton,4,3,3.8289,1.79173
+31197,2026-08-30 13:00:00,True,Leeds,Brentford,1,1,1.14993,1.61344
+31198,2026-08-30 15:30:00,True,Manchester United,Ipswich,5,2,4.86612,1.80548
+31199,2026-08-31 19:00:00,True,Aston Villa,Arsenal,0,1,0.281925,1.52441
+31200,2026-09-04 19:00:00,True,Ipswich,Liverpool,0,2,0.597972,0.744139
+31201,2026-09-05 11:30:00,True,Newcastle United,Bournemouth,2,2,0.771636,1.63891
+31202,2026-09-05 14:00:00,True,Manchester City,Coventry,1,0,2.19038,1.49306
+31203,2026-09-05 14:00:00,True,Nottingham Forest,Tottenham,0,0,0.831692,1.48446
+31204,2026-09-05 14:00:00,True,Fulham,Crystal Palace,2,3,2.88274,2.35981
+31205,2026-09-05 14:00:00,True,Brentford,Sunderland,1,1,1.58584,2.15489
+31206,2026-09-05 14:00:00,True,Brighton,Leeds,1,1,2.22026,2.23407
+31207,2026-09-05 16:30:00,True,Hull,Aston Villa,0,0,0.812385,1.63526
+31208,2026-09-06 13:00:00,True,Everton,Manchester United,2,2,1.05629,0.872225
+31209,2026-09-06 15:30:00,True,Arsenal,Chelsea,2,1,2.80555,0.430508
+31210,2026-09-12 14:00:00,True,Bournemouth,Brentford,2,2,2.54949,0.794238
+31211,2026-09-12 14:00:00,True,Aston Villa,Nottingham Forest,1,2,1.08786,2.79451
+31212,2026-09-12 14:00:00,True,Chelsea,Hull,2,2,1.21374,1.80363
+31213,2026-09-12 14:00:00,True,Crystal Palace,Ipswich,2,3,0.937888,2.03423
+31214,2026-09-12 14:00:00,True,Liverpool,Fulham,0,0,1.79832,0.922453
+31215,2026-09-12 16:30:00,True,Tottenham,Everton,0,0,0.736856,1.60056
+31216,2026-09-12 19:00:00,True,Sunderland,Arsenal,0,2,2.07033,1.98905
+31217,2026-09-13 13:00:00,True,Coventry,Brighton,0,5,1.04812,2.76518
+31218,2026-09-13 15:30:00,True,Manchester United,Manchester City,0,1,0.943406,1.14073
+31219,2026-09-14 19:00:00,True,Leeds,Newcastle United,4,1,2.2902,0.793165
+31220,2026-09-18 19:00:00,True,Brentford,Chelsea,3,0,2.47935,0.885111
+31221,2026-09-19 11:30:00,True,Tottenham,Aston Villa,2,3,1.72177,1.7092
+31223,2026-09-19 14:00:00,True,Newcastle United,Hull,2,1,1.37521,1.15888
+31224,2026-09-19 14:00:00,True,Brighton,Arsenal,3,0,2.11268,1.23979
+31226,2026-09-19 14:00:00,True,Everton,Ipswich,1,0,2.58285,1.10179
+31227,2026-09-19 16:30:00,True,Nottingham Forest,Coventry,0,1,1.31852,0.69375
+31222,2026-09-20 13:00:00,True,Manchester City,Sunderland,5,3,2.66856,3.10661
+31225,2026-09-20 13:00:00,True,Leeds,Crystal Palace,0,0,1.08552,1.12905
+31228,2026-09-20 13:00:00,True,Bournemouth,Liverpool,0,1,0.944706,1.29116
+31229,2026-09-20 15:30:00,True,Fulham,Manchester United,1,1,1.71719,2.12453
+31230,2026-10-10 11:30:00,True,Arsenal,Leeds,2,1,2.32061,1.19826
+31231,2026-10-10 14:00:00,True,Aston Villa,Brentford,2,2,1.83842,1.28128
+31232,2026-10-10 14:00:00,True,Chelsea,Bournemouth,5,1,1.3732,1.67505
+31233,2026-10-10 14:00:00,True,Ipswich,Fulham,2,1,1.25918,1.77856
+31234,2026-10-10 14:00:00,True,Sunderland,Brighton,0,2,0.869773,1.64162
+31235,2026-10-10 16:30:00,True,Manchester United,Tottenham,1,1,0.867817,2.03436
+31236,2026-10-11 13:00:00,True,Crystal Palace,Nottingham Forest,3,1,2.24807,3.76379
+31237,2026-10-11 13:00:00,True,Hull,Everton,2,2,1.53245,2.79588
+31238,2026-10-11 15:30:00,True,Liverpool,Manchester City,0,3,0.75917,1.58703
+31239,2026-10-12 19:00:00,True,Coventry,Newcastle United,4,1,1.66422,2.21865
+31240,2026-10-17 11:30:00,True,Everton,Chelsea,0,2,0.570749,1.602
+31241,2026-10-17 14:00:00,True,Fulham,Hull,1,0,2.27426,0.130919
+31242,2026-10-17 14:00:00,True,Brentford,Liverpool,1,2,0.858733,1.54933
+31243,2026-10-17 14:00:00,True,Manchester City,Ipswich,3,2,4.00772,1.37153
+31244,2026-10-17 16:30:00,True,Newcastle United,Aston Villa,0,1,0.920183,2.0822
+31245,2026-10-18 13:00:00,True,Brighton,Crystal Palace,5,0,2.2522,0.627519
+31246,2026-10-18 13:00:00,True,Bournemouth,Sunderland,2,0,4.386,0.0943414
+31247,2026-10-18 13:00:00,True,Leeds,Manchester United,1,1,1.41034,1.08135
+31248,2026-10-18 15:30:00,True,Nottingham Forest,Arsenal,0,1,0.74721,0.9151
+31249,2026-10-19 19:00:00,True,Tottenham,Coventry,3,1,0.971825,1.1439
+31250,2026-10-23 19:00:00,True,Ipswich,Nottingham Forest,1,1,0.856862,2.75509
+31251,2026-10-24 11:30:00,True,Aston Villa,Manchester City,2,1,0.645964,2.28542
+31253,2026-10-24 14:00:00,True,Coventry,Fulham,0,1,0.402537,0.572746
+31254,2026-10-24 14:00:00,True,Arsenal,Everton,2,0,2.28617,0.721815
+31255,2026-10-24 16:30:00,True,Chelsea,Tottenham,0,2,0.460466,0.979641
+31252,2026-10-25 14:00:00,True,Liverpool,Brighton,2,0,1.2818,1.31352
+31256,2026-10-25 14:00:00,True,Manchester United,Bournemouth,0,3,0.84372,2.56254
+31257,2026-10-25 14:00:00,True,Crystal Palace,Newcastle United,0,2,2.02904,1.29755
+31258,2026-10-25 14:00:00,True,Hull,Brentford,1,1,1.93749,1.70706
+31259,2026-10-25 16:30:00,True,Sunderland,Leeds,0,0,1.02357,1.06511
+31260,2026-10-31 12:30:00,False,Chelsea,Manchester United,,,,
+31261,2026-10-31 15:00:00,False,Coventry,Sunderland,,,,
+31262,2026-10-31 15:00:00,False,Hull,Ipswich,,,,
+31263,2026-10-31 15:00:00,False,Manchester City,Brighton,,,,
+31264,2026-10-31 15:00:00,False,Bournemouth,Leeds,,,,
+31265,2026-10-31 15:00:00,False,Brentford,Nottingham Forest,,,,
+31266,2026-10-31 17:30:00,False,Tottenham,Crystal Palace,,,,
+31267,2026-10-31 20:00:00,False,Aston Villa,Fulham,,,,
+31268,2026-11-01 16:30:00,False,Liverpool,Arsenal,,,,
+31269,2026-11-02 20:00:00,False,Newcastle United,Everton,,,,
+31273,2026-11-06 20:00:00,False,Everton,Coventry,,,,
+31276,2026-11-07 12:30:00,False,Leeds,Tottenham,,,,
+31270,2026-11-07 15:00:00,False,Arsenal,Hull,,,,
+31274,2026-11-07 15:00:00,False,Fulham,Newcastle United,,,,
+31278,2026-11-07 17:30:00,False,Nottingham Forest,Manchester City,,,,
+31271,2026-11-08 14:00:00,False,Brighton,Brentford,,,,
+31272,2026-11-08 14:00:00,False,Crystal Palace,Liverpool,,,,
+31275,2026-11-08 14:00:00,False,Ipswich,Bournemouth,,,,
+31279,2026-11-08 14:00:00,False,Sunderland,Chelsea,,,,
+31277,2026-11-08 16:30:00,False,Manchester United,Aston Villa,,,,
+31287,2026-11-21 12:30:00,False,Manchester City,Fulham,,,,
+31280,2026-11-21 15:00:00,False,Bournemouth,Nottingham Forest,,,,
+31281,2026-11-21 15:00:00,False,Aston Villa,Sunderland,,,,
+31283,2026-11-21 15:00:00,False,Chelsea,Leeds,,,,
+31284,2026-11-21 15:00:00,False,Coventry,Crystal Palace,,,,
+31289,2026-11-21 15:00:00,False,Tottenham,Ipswich,,,,
+31288,2026-11-21 17:30:00,False,Newcastle United,Arsenal,,,,
+31285,2026-11-22 14:00:00,False,Hull,Brighton,,,,
+31286,2026-11-22 16:30:00,False,Liverpool,Manchester United,,,,
+31282,2026-11-23 20:00:00,False,Brentford,Everton,,,,
+31298,2026-11-27 20:00:00,False,Nottingham Forest,Chelsea,,,,
+31296,2026-11-28 15:00:00,False,Leeds,Coventry,,,,
+31297,2026-11-28 15:00:00,False,Manchester United,Brentford,,,,
+31295,2026-11-28 17:30:00,False,Ipswich,Aston Villa,,,,
+31293,2026-11-29 12:00:00,False,Everton,Liverpool,,,,
+31291,2026-11-29 14:05:00,False,Brighton,Newcastle United,,,,
+31292,2026-11-29 14:05:00,False,Crystal Palace,Hull,,,,
+31294,2026-11-29 14:05:00,False,Fulham,Bournemouth,,,,
+31299,2026-11-29 14:05:00,False,Sunderland,Tottenham,,,,
+31290,2026-11-29 16:30:00,False,Arsenal,Manchester City,,,,
+31300,2026-12-02 20:00:00,False,Bournemouth,Brighton,,,,
+31301,2026-12-02 20:00:00,False,Aston Villa,Everton,,,,
+31302,2026-12-02 20:00:00,False,Brentford,Arsenal,,,,
+31303,2026-12-02 20:00:00,False,Chelsea,Crystal Palace,,,,
+31304,2026-12-02 20:00:00,False,Coventry,Ipswich,,,,
+31305,2026-12-02 20:00:00,False,Hull,Nottingham Forest,,,,
+31306,2026-12-02 20:00:00,False,Liverpool,Sunderland,,,,
+31307,2026-12-02 20:00:00,False,Manchester City,Leeds,,,,
+31308,2026-12-02 20:00:00,False,Newcastle United,Manchester United,,,,
+31309,2026-12-02 20:00:00,False,Tottenham,Fulham,,,,
+31310,2026-12-05 15:00:00,False,Bournemouth,Hull,,,,
+31311,2026-12-05 15:00:00,False,Aston Villa,Crystal Palace,,,,
+31312,2026-12-05 15:00:00,False,Nottingham Forest,Brighton,,,,
+31313,2026-12-05 15:00:00,False,Tottenham,Arsenal,,,,
+31314,2026-12-05 15:00:00,False,Brentford,Manchester City,,,,
+31315,2026-12-05 15:00:00,False,Chelsea,Liverpool,,,,
+31316,2026-12-05 15:00:00,False,Everton,Fulham,,,,
+31317,2026-12-05 15:00:00,False,Manchester United,Coventry,,,,
+31318,2026-12-05 15:00:00,False,Leeds,Ipswich,,,,
+31319,2026-12-05 15:00:00,False,Newcastle United,Sunderland,,,,
+31320,2026-12-12 15:00:00,False,Arsenal,Bournemouth,,,,
+31321,2026-12-12 15:00:00,False,Brighton,Everton,,,,
+31322,2026-12-12 15:00:00,False,Coventry,Aston Villa,,,,
+31323,2026-12-12 15:00:00,False,Crystal Palace,Manchester United,,,,
+31324,2026-12-12 15:00:00,False,Sunderland,Nottingham Forest,,,,
+31325,2026-12-12 15:00:00,False,Fulham,Brentford,,,,
+31326,2026-12-12 15:00:00,False,Hull,Tottenham,,,,
+31327,2026-12-12 15:00:00,False,Ipswich,Newcastle United,,,,
+31328,2026-12-12 15:00:00,False,Liverpool,Leeds,,,,
+31329,2026-12-12 15:00:00,False,Manchester City,Chelsea,,,,
+31330,2026-12-19 15:00:00,False,Bournemouth,Coventry,,,,
+31331,2026-12-19 15:00:00,False,Arsenal,Manchester United,,,,
+31332,2026-12-19 15:00:00,False,Brentford,Newcastle United,,,,
+31333,2026-12-19 15:00:00,False,Brighton,Ipswich,,,,
+31334,2026-12-19 15:00:00,False,Chelsea,Aston Villa,,,,
+31335,2026-12-19 15:00:00,False,Leeds,Fulham,,,,
+31336,2026-12-19 15:00:00,False,Liverpool,Tottenham,,,,
+31337,2026-12-19 15:00:00,False,Manchester City,Hull,,,,
+31338,2026-12-19 15:00:00,False,Nottingham Forest,Everton,,,,
+31339,2026-12-19 15:00:00,False,Sunderland,Crystal Palace,,,,
+31340,2026-12-26 15:00:00,False,Aston Villa,Leeds,,,,
+31341,2026-12-26 15:00:00,False,Coventry,Chelsea,,,,
+31342,2026-12-26 15:00:00,False,Crystal Palace,Arsenal,,,,
+31343,2026-12-26 15:00:00,False,Everton,Sunderland,,,,
+31344,2026-12-26 15:00:00,False,Fulham,Brighton,,,,
+31345,2026-12-26 15:00:00,False,Ipswich,Brentford,,,,
+31346,2026-12-26 15:00:00,False,Manchester United,Nottingham Forest,,,,
+31347,2026-12-26 15:00:00,False,Newcastle United,Manchester City,,,,
+31348,2026-12-26 15:00:00,False,Tottenham,Bournemouth,,,,
+31349,2026-12-26 15:00:00,False,Hull,Liverpool,,,,
+31350,2026-12-30 20:00:00,False,Aston Villa,Liverpool,,,,
+31351,2026-12-30 20:00:00,False,Coventry,Brentford,,,,
+31352,2026-12-30 20:00:00,False,Crystal Palace,Bournemouth,,,,
+31353,2026-12-30 20:00:00,False,Fulham,Arsenal,,,,
+31354,2026-12-30 20:00:00,False,Tottenham,Brighton,,,,
+31355,2026-12-30 20:00:00,False,Newcastle United,Nottingham Forest,,,,
+31356,2026-12-30 20:00:00,False,Manchester United,Sunderland,,,,
+31357,2026-12-30 20:00:00,False,Ipswich,Chelsea,,,,
+31358,2026-12-30 20:00:00,False,Hull,Leeds,,,,
+31359,2026-12-30 20:00:00,False,Everton,Manchester City,,,,
+31360,2027-01-02 15:00:00,False,Bournemouth,Aston Villa,,,,
+31361,2027-01-02 15:00:00,False,Arsenal,Ipswich,,,,
+31362,2027-01-02 15:00:00,False,Brentford,Crystal Palace,,,,
+31363,2027-01-02 15:00:00,False,Brighton,Manchester United,,,,
+31364,2027-01-02 15:00:00,False,Chelsea,Newcastle United,,,,
+31365,2027-01-02 15:00:00,False,Leeds,Everton,,,,
+31366,2027-01-02 15:00:00,False,Liverpool,Coventry,,,,
+31367,2027-01-02 15:00:00,False,Manchester City,Tottenham,,,,
+31368,2027-01-02 15:00:00,False,Sunderland,Hull,,,,
+31369,2027-01-02 15:00:00,False,Nottingham Forest,Fulham,,,,
+31370,2027-01-06 20:00:00,False,Arsenal,Brentford,,,,
+31371,2027-01-06 20:00:00,False,Brighton,Bournemouth,,,,
+31372,2027-01-06 20:00:00,False,Crystal Palace,Chelsea,,,,
+31373,2027-01-06 20:00:00,False,Everton,Aston Villa,,,,
+31374,2027-01-06 20:00:00,False,Fulham,Tottenham,,,,
+31375,2027-01-06 20:00:00,False,Ipswich,Coventry,,,,
+31376,2027-01-06 20:00:00,False,Leeds,Manchester City,,,,
+31377,2027-01-06 20:00:00,False,Manchester United,Newcastle United,,,,
+31378,2027-01-06 20:00:00,False,Nottingham Forest,Hull,,,,
+31379,2027-01-06 20:00:00,False,Sunderland,Liverpool,,,,
+31380,2027-01-16 15:00:00,False,Bournemouth,Ipswich,,,,
+31381,2027-01-16 15:00:00,False,Aston Villa,Manchester United,,,,
+31382,2027-01-16 15:00:00,False,Brentford,Brighton,,,,
+31383,2027-01-16 15:00:00,False,Chelsea,Sunderland,,,,
+31384,2027-01-16 15:00:00,False,Coventry,Everton,,,,
+31385,2027-01-16 15:00:00,False,Hull,Arsenal,,,,
+31386,2027-01-16 15:00:00,False,Liverpool,Crystal Palace,,,,
+31387,2027-01-16 15:00:00,False,Manchester City,Nottingham Forest,,,,
+31388,2027-01-16 15:00:00,False,Newcastle United,Fulham,,,,
+31389,2027-01-16 15:00:00,False,Tottenham,Leeds,,,,
+31390,2027-01-23 15:00:00,False,Arsenal,Newcastle United,,,,
+31391,2027-01-23 15:00:00,False,Brighton,Manchester City,,,,
+31392,2027-01-23 15:00:00,False,Crystal Palace,Tottenham,,,,
+31393,2027-01-23 15:00:00,False,Everton,Brentford,,,,
+31394,2027-01-23 15:00:00,False,Fulham,Aston Villa,,,,
+31395,2027-01-23 15:00:00,False,Ipswich,Hull,,,,
+31396,2027-01-23 15:00:00,False,Leeds,Chelsea,,,,
+31397,2027-01-23 15:00:00,False,Manchester United,Liverpool,,,,
+31398,2027-01-23 15:00:00,False,Nottingham Forest,Bournemouth,,,,
+31399,2027-01-23 15:00:00,False,Sunderland,Coventry,,,,
+31400,2027-01-30 15:00:00,False,Bournemouth,Fulham,,,,
+31401,2027-01-30 15:00:00,False,Newcastle United,Brighton,,,,
+31402,2027-01-30 15:00:00,False,Manchester City,Arsenal,,,,
+31403,2027-01-30 15:00:00,False,Liverpool,Everton,,,,
+31404,2027-01-30 15:00:00,False,Hull,Crystal Palace,,,,
+31405,2027-01-30 15:00:00,False,Coventry,Leeds,,,,
+31406,2027-01-30 15:00:00,False,Chelsea,Nottingham Forest,,,,
+31407,2027-01-30 15:00:00,False,Brentford,Manchester United,,,,
+31408,2027-01-30 15:00:00,False,Aston Villa,Ipswich,,,,
+31409,2027-01-30 15:00:00,False,Tottenham,Sunderland,,,,
+31410,2027-02-06 15:00:00,False,Ipswich,Tottenham,,,,
+31411,2027-02-06 15:00:00,False,Leeds,Bournemouth,,,,
+31412,2027-02-06 15:00:00,False,Manchester United,Chelsea,,,,
+31413,2027-02-06 15:00:00,False,Nottingham Forest,Brentford,,,,
+31414,2027-02-06 15:00:00,False,Sunderland,Aston Villa,,,,
+31415,2027-02-06 15:00:00,False,Arsenal,Liverpool,,,,
+31416,2027-02-06 15:00:00,False,Brighton,Hull,,,,
+31417,2027-02-06 15:00:00,False,Crystal Palace,Coventry,,,,
+31418,2027-02-06 15:00:00,False,Everton,Newcastle United,,,,
+31419,2027-02-06 15:00:00,False,Fulham,Manchester City,,,,
+31420,2027-02-10 20:00:00,False,Aston Villa,Bournemouth,,,,
+31421,2027-02-10 20:00:00,False,Coventry,Liverpool,,,,
+31422,2027-02-10 20:00:00,False,Crystal Palace,Brentford,,,,
+31423,2027-02-10 20:00:00,False,Everton,Leeds,,,,
+31424,2027-02-10 20:00:00,False,Fulham,Nottingham Forest,,,,
+31425,2027-02-10 20:00:00,False,Hull,Sunderland,,,,
+31426,2027-02-10 20:00:00,False,Ipswich,Arsenal,,,,
+31427,2027-02-10 20:00:00,False,Manchester United,Brighton,,,,
+31428,2027-02-10 20:00:00,False,Newcastle United,Chelsea,,,,
+31429,2027-02-10 20:00:00,False,Tottenham,Manchester City,,,,
+31430,2027-02-20 15:00:00,False,Bournemouth,Crystal Palace,,,,
+31431,2027-02-20 15:00:00,False,Arsenal,Fulham,,,,
+31432,2027-02-20 15:00:00,False,Brentford,Coventry,,,,
+31433,2027-02-20 15:00:00,False,Brighton,Tottenham,,,,
+31434,2027-02-20 15:00:00,False,Chelsea,Ipswich,,,,
+31435,2027-02-20 15:00:00,False,Leeds,Aston Villa,,,,
+31436,2027-02-20 15:00:00,False,Liverpool,Hull,,,,
+31437,2027-02-20 15:00:00,False,Manchester City,Newcastle United,,,,
+31438,2027-02-20 15:00:00,False,Nottingham Forest,Manchester United,,,,
+31439,2027-02-20 15:00:00,False,Sunderland,Everton,,,,
+31440,2027-02-27 15:00:00,False,Aston Villa,Chelsea,,,,
+31441,2027-02-27 15:00:00,False,Coventry,Bournemouth,,,,
+31442,2027-02-27 15:00:00,False,Crystal Palace,Sunderland,,,,
+31443,2027-02-27 15:00:00,False,Everton,Nottingham Forest,,,,
+31444,2027-02-27 15:00:00,False,Fulham,Leeds,,,,
+31445,2027-02-27 15:00:00,False,Hull,Manchester City,,,,
+31446,2027-02-27 15:00:00,False,Ipswich,Brighton,,,,
+31447,2027-02-27 15:00:00,False,Manchester United,Arsenal,,,,
+31448,2027-02-27 15:00:00,False,Newcastle United,Brentford,,,,
+31449,2027-02-27 15:00:00,False,Tottenham,Liverpool,,,,
+31450,2027-03-03 20:00:00,False,Bournemouth,Tottenham,,,,
+31451,2027-03-03 20:00:00,False,Arsenal,Crystal Palace,,,,
+31452,2027-03-03 20:00:00,False,Brentford,Ipswich,,,,
+31453,2027-03-03 20:00:00,False,Brighton,Fulham,,,,
+31454,2027-03-03 20:00:00,False,Chelsea,Coventry,,,,
+31455,2027-03-03 20:00:00,False,Leeds,Hull,,,,
+31456,2027-03-03 20:00:00,False,Liverpool,Aston Villa,,,,
+31457,2027-03-03 20:00:00,False,Manchester City,Everton,,,,
+31458,2027-03-03 20:00:00,False,Nottingham Forest,Newcastle United,,,,
+31459,2027-03-03 20:00:00,False,Sunderland,Manchester United,,,,
+31460,2027-03-13 15:00:00,False,Bournemouth,Newcastle United,,,,
+31461,2027-03-13 15:00:00,False,Aston Villa,Hull,,,,
+31462,2027-03-13 15:00:00,False,Chelsea,Arsenal,,,,
+31463,2027-03-13 15:00:00,False,Coventry,Manchester City,,,,
+31464,2027-03-13 15:00:00,False,Crystal Palace,Fulham,,,,
+31465,2027-03-13 15:00:00,False,Leeds,Brighton,,,,
+31466,2027-03-13 15:00:00,False,Liverpool,Ipswich,,,,
+31467,2027-03-13 15:00:00,False,Manchester United,Everton,,,,
+31468,2027-03-13 15:00:00,False,Sunderland,Brentford,,,,
+31469,2027-03-13 15:00:00,False,Tottenham,Nottingham Forest,,,,
+31470,2027-03-20 15:00:00,False,Arsenal,Sunderland,,,,
+31471,2027-03-20 15:00:00,False,Brentford,Bournemouth,,,,
+31472,2027-03-20 15:00:00,False,Brighton,Coventry,,,,
+31473,2027-03-20 15:00:00,False,Everton,Tottenham,,,,
+31474,2027-03-20 15:00:00,False,Fulham,Liverpool,,,,
+31475,2027-03-20 15:00:00,False,Hull,Chelsea,,,,
+31476,2027-03-20 15:00:00,False,Ipswich,Crystal Palace,,,,
+31477,2027-03-20 15:00:00,False,Manchester City,Manchester United,,,,
+31478,2027-03-20 15:00:00,False,Newcastle United,Leeds,,,,
+31479,2027-03-20 15:00:00,False,Nottingham Forest,Aston Villa,,,,
+31480,2027-04-10 14:00:00,False,Bournemouth,Manchester City,,,,
+31481,2027-04-10 14:00:00,False,Aston Villa,Brighton,,,,
+31482,2027-04-10 14:00:00,False,Chelsea,Fulham,,,,
+31483,2027-04-10 14:00:00,False,Coventry,Arsenal,,,,
+31484,2027-04-10 14:00:00,False,Crystal Palace,Everton,,,,
+31485,2027-04-10 14:00:00,False,Leeds,Nottingham Forest,,,,
+31486,2027-04-10 14:00:00,False,Liverpool,Newcastle United,,,,
+31487,2027-04-10 14:00:00,False,Manchester United,Hull,,,,
+31488,2027-04-10 14:00:00,False,Sunderland,Ipswich,,,,
+31489,2027-04-10 14:00:00,False,Tottenham,Brentford,,,,
+31490,2027-04-17 14:00:00,False,Arsenal,Aston Villa,,,,
+31491,2027-04-17 14:00:00,False,Brentford,Leeds,,,,
+31492,2027-04-17 14:00:00,False,Brighton,Chelsea,,,,
+31493,2027-04-17 14:00:00,False,Everton,Bournemouth,,,,
+31494,2027-04-17 14:00:00,False,Fulham,Sunderland,,,,
+31495,2027-04-17 14:00:00,False,Hull,Coventry,,,,
+31496,2027-04-17 14:00:00,False,Ipswich,Manchester United,,,,
+31497,2027-04-17 14:00:00,False,Manchester City,Crystal Palace,,,,
+31498,2027-04-17 14:00:00,False,Newcastle United,Tottenham,,,,
+31499,2027-04-17 14:00:00,False,Nottingham Forest,Liverpool,,,,
+31500,2027-04-24 14:00:00,False,Bournemouth,Arsenal,,,,
+31501,2027-04-24 14:00:00,False,Aston Villa,Coventry,,,,
+31502,2027-04-24 14:00:00,False,Brentford,Fulham,,,,
+31503,2027-04-24 14:00:00,False,Chelsea,Manchester City,,,,
+31504,2027-04-24 14:00:00,False,Everton,Brighton,,,,
+31505,2027-04-24 14:00:00,False,Leeds,Liverpool,,,,
+31506,2027-04-24 14:00:00,False,Manchester United,Crystal Palace,,,,
+31507,2027-04-24 14:00:00,False,Newcastle United,Ipswich,,,,
+31508,2027-04-24 14:00:00,False,Nottingham Forest,Sunderland,,,,
+31509,2027-04-24 14:00:00,False,Tottenham,Hull,,,,
+31510,2027-05-01 14:00:00,False,Arsenal,Tottenham,,,,
+31511,2027-05-01 14:00:00,False,Brighton,Nottingham Forest,,,,
+31512,2027-05-01 14:00:00,False,Coventry,Manchester United,,,,
+31513,2027-05-01 14:00:00,False,Crystal Palace,Aston Villa,,,,
+31514,2027-05-01 14:00:00,False,Fulham,Everton,,,,
+31515,2027-05-01 14:00:00,False,Hull,Bournemouth,,,,
+31516,2027-05-01 14:00:00,False,Ipswich,Leeds,,,,
+31517,2027-05-01 14:00:00,False,Liverpool,Chelsea,,,,
+31518,2027-05-01 14:00:00,False,Manchester City,Brentford,,,,
+31519,2027-05-01 14:00:00,False,Sunderland,Newcastle United,,,,
+31520,2027-05-08 14:00:00,False,Bournemouth,Manchester United,,,,
+31521,2027-05-08 14:00:00,False,Brentford,Aston Villa,,,,
+31522,2027-05-08 14:00:00,False,Brighton,Sunderland,,,,
+31523,2027-05-08 14:00:00,False,Everton,Hull,,,,
+31524,2027-05-08 14:00:00,False,Fulham,Ipswich,,,,
+31525,2027-05-08 14:00:00,False,Leeds,Arsenal,,,,
+31526,2027-05-08 14:00:00,False,Newcastle United,Coventry,,,,
+31527,2027-05-08 14:00:00,False,Nottingham Forest,Crystal Palace,,,,
+31528,2027-05-08 14:00:00,False,Tottenham,Chelsea,,,,
+31529,2027-05-08 14:00:00,False,Manchester City,Liverpool,,,,
+31530,2027-05-15 14:00:00,False,Arsenal,Nottingham Forest,,,,
+31531,2027-05-15 14:00:00,False,Aston Villa,Newcastle United,,,,
+31532,2027-05-15 14:00:00,False,Chelsea,Everton,,,,
+31533,2027-05-15 14:00:00,False,Coventry,Tottenham,,,,
+31534,2027-05-15 14:00:00,False,Crystal Palace,Brighton,,,,
+31535,2027-05-15 14:00:00,False,Hull,Fulham,,,,
+31536,2027-05-15 14:00:00,False,Ipswich,Manchester City,,,,
+31537,2027-05-15 14:00:00,False,Liverpool,Brentford,,,,
+31538,2027-05-15 14:00:00,False,Manchester United,Leeds,,,,
+31539,2027-05-15 14:00:00,False,Sunderland,Bournemouth,,,,
+31540,2027-05-23 14:00:00,False,Bournemouth,Chelsea,,,,
+31541,2027-05-23 14:00:00,False,Brentford,Hull,,,,
+31542,2027-05-23 14:00:00,False,Brighton,Liverpool,,,,
+31543,2027-05-23 14:00:00,False,Everton,Arsenal,,,,
+31544,2027-05-23 14:00:00,False,Fulham,Coventry,,,,
+31545,2027-05-23 14:00:00,False,Leeds,Sunderland,,,,
+31546,2027-05-23 14:00:00,False,Manchester City,Aston Villa,,,,
+31547,2027-05-23 14:00:00,False,Newcastle United,Crystal Palace,,,,
+31548,2027-05-23 14:00:00,False,Nottingham Forest,Ipswich,,,,
+31549,2027-05-23 14:00:00,False,Tottenham,Manchester United,,,,
+31550,2027-05-30 15:00:00,False,Chelsea,Brentford,,,,
+31551,2027-05-30 15:00:00,False,Coventry,Nottingham Forest,,,,
+31552,2027-05-30 15:00:00,False,Crystal Palace,Leeds,,,,
+31553,2027-05-30 15:00:00,False,Aston Villa,Tottenham,,,,
+31554,2027-05-30 15:00:00,False,Arsenal,Brighton,,,,
+31555,2027-05-30 15:00:00,False,Hull,Newcastle United,,,,
+31556,2027-05-30 15:00:00,False,Ipswich,Everton,,,,
+31557,2027-05-30 15:00:00,False,Liverpool,Bournemouth,,,,
+31558,2027-05-30 15:00:00,False,Manchester United,Fulham,,,,
+31559,2027-05-30 15:00:00,False,Sunderland,Manchester City,,,,
