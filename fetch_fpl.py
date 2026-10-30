@@ -14,6 +14,14 @@ football-data.co.uk) and writes trimmed, easy-to-read files:
                     target, corners, fouls, cards, bookmaker odds
   fixtures_odds.csv upcoming matches with bookmaker odds + implied win
                     probabilities (football-data.co.uk, current week only)
+  players_extra.csv cards (suspension tracking), penalty / set-piece taker
+                    order, FPL's own expected points, price-change and
+                    transfer-trend fields
+  news_log.csv      append-only log of every change to a player's injury /
+                    availability flag and news text (with a timestamp)
+  understat_players.csv / understat_matches.csv
+                    shot-based xG data from Understat (optional, may be
+                    skipped if the site blocks the request)
 
 Run manually with: python fetch_fpl.py
 Designed to be run automatically by the GitHub Actions workflow
@@ -335,6 +343,124 @@ def write_football_data(data):
         print(f"football-data fixtures skipped: {e}")
 
 
+# ------------------------------------- extra FPL fields, news log (optional)
+
+EXTRA_FIELDS = [
+    "id", "web_name", "team", "position", "status", "chance_of_playing_next_round",
+    "chance_of_playing_this_round", "news_added", "yellow_cards", "red_cards",
+    "starts", "penalties_order", "direct_freekicks_order",
+    "corners_and_indirect_freekicks_order", "ep_next", "ep_this",
+    "now_cost_m", "cost_change_event", "cost_change_start",
+    "transfers_in_event", "transfers_out_event", "selected_by_percent",
+]
+
+
+def write_players_extra(data, teams, positions):
+    with open("players_extra.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(EXTRA_FIELDS)
+        for p in data["elements"]:
+            w.writerow([
+                p["id"], p["web_name"], teams.get(p["team"], ""),
+                positions.get(p["element_type"], ""), p["status"],
+                p.get("chance_of_playing_next_round"),
+                p.get("chance_of_playing_this_round"), p.get("news_added"),
+                p.get("yellow_cards"), p.get("red_cards"), p.get("starts"),
+                p.get("penalties_order"), p.get("direct_freekicks_order"),
+                p.get("corners_and_indirect_freekicks_order"),
+                p.get("ep_next"), p.get("ep_this"), p["now_cost"] / 10,
+                p.get("cost_change_event"), p.get("cost_change_start"),
+                p.get("transfers_in_event"), p.get("transfers_out_event"),
+                p["selected_by_percent"],
+            ])
+
+
+NEWS_FIELDS = [
+    "logged_utc", "player_id", "web_name", "team", "status",
+    "chance_next_round", "news", "news_added",
+]
+
+
+def update_news_log(data, teams):
+    """Append a row whenever a player's status / chance / news text changes."""
+    last = {}
+    try:
+        with open("news_log.csv", newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                last[row["player_id"]] = (
+                    row["status"], row["chance_next_round"], row["news"])
+    except FileNotFoundError:
+        pass
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    new_rows = []
+    for p in data["elements"]:
+        chance = p.get("chance_of_playing_next_round")
+        state = (p["status"], "" if chance is None else str(chance), p["news"] or "")
+        pid = str(p["id"])
+        if pid in last:
+            changed = last[pid] != state
+        else:
+            # first sighting: only record players who are not simply 'available'
+            changed = state[0] != "a" or state[2] != ""
+        if changed:
+            new_rows.append([
+                stamp, p["id"], p["web_name"], teams.get(p["team"], ""),
+                state[0], state[1], state[2], p.get("news_added") or "",
+            ])
+    write_header = not last and not _exists("news_log.csv")
+    with open("news_log.csv", "a", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if write_header:
+            w.writerow(NEWS_FIELDS)
+        w.writerows(new_rows)
+    print(f"news log: {len(new_rows)} changes recorded")
+
+
+def _exists(path):
+    try:
+        open(path).close()
+        return True
+    except FileNotFoundError:
+        return False
+
+
+# ------------------------------------------------------- Understat (optional)
+
+def write_understat():
+    """Player and match xG from Understat. Fails soft - the site may block bots."""
+    year = int(season_code()[:2]) + 2000
+    url = f"https://understat.com/getLeagueData/EPL/{year}"
+    r = requests.get(
+        url,
+        headers={**HEADERS, "X-Requested-With": "XMLHttpRequest",
+                 "Referer": f"https://understat.com/league/EPL/{year}"},
+        timeout=30,
+    )
+    r.raise_for_status()
+    d = r.json()
+    players = d.get("players", [])
+    cols = ["id", "player_name", "team_title", "position", "games", "time",
+            "goals", "xG", "npg", "npxG", "assists", "xA", "shots", "key_passes",
+            "yellow_cards", "red_cards", "xGChain", "xGBuildup"]
+    with open("understat_players.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(cols)
+        for p in players:
+            w.writerow([p.get(c, "") for c in cols])
+    matches = d.get("dates", [])
+    with open("understat_matches.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["id", "datetime", "is_result", "home", "away",
+                    "goals_h", "goals_a", "xg_h", "xg_a"])
+        for m in matches:
+            g, x = m.get("goals") or {}, m.get("xG") or {}
+            w.writerow([m.get("id"), m.get("datetime"), m.get("isResult"),
+                        (m.get("h") or {}).get("title"),
+                        (m.get("a") or {}).get("title"),
+                        g.get("h", ""), g.get("a", ""), x.get("h", ""), x.get("a", "")])
+    print(f"understat: {len(players)} players, {len(matches)} matches")
+
+
 # ----------------------------------------------------------------------- main
 
 def main():
@@ -348,8 +474,11 @@ def main():
     write_meta(data)
 
     # Optional extras: never let these break the core run
-    for step in (lambda: write_history(data, teams, positions),
-                 lambda: write_football_data(data)):
+    for step in (lambda: write_players_extra(data, teams, positions),
+                 lambda: update_news_log(data, teams),
+                 lambda: write_history(data, teams, positions),
+                 lambda: write_football_data(data),
+                 write_understat):
         try:
             step()
         except Exception as e:  # noqa: BLE001
