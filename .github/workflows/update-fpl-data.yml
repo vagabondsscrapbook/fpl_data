@@ -6,7 +6,7 @@ on:
     # Adjust to taste - e.g. add extra runs around Saturday/Sunday
     # matches and Monday-morning price changes if you want fresher
     # data on those days specifically.
-    - cron: '0 6,18 * * *'
+    - cron: '0 6,12,18 * * *'
   workflow_dispatch: {}   # lets you trigger a manual run from the Actions tab
 
 permissions:
@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "fpl-data-bot"
           git config user.email "actions@github.com"
-          for f in players.csv teams.csv fixtures.csv meta.json history.csv past_seasons.csv matches_fd.csv fixtures_odds.csv; do
+          for f in players.csv teams.csv fixtures.csv meta.json history.csv past_seasons.csv matches_fd.csv fixtures_odds.csv players_extra.csv news_log.csv understat_players.csv understat_matches.csv; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git diff --staged --quiet || git commit -m "Update FPL data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
