@@ -79,13 +79,13 @@ id,datetime,is_result,home,away,goals_h,goals_a,xg_h,xg_a
 31257,2026-10-25 14:00:00,True,Crystal Palace,Newcastle United,0,2,2.02904,1.29755
 31258,2026-10-25 14:00:00,True,Hull,Brentford,1,1,1.93749,1.70706
 31259,2026-10-25 16:30:00,True,Sunderland,Leeds,0,0,1.02357,1.06511
-31260,2026-10-31 12:30:00,False,Chelsea,Manchester United,,,,
-31261,2026-10-31 15:00:00,False,Coventry,Sunderland,,,,
-31262,2026-10-31 15:00:00,False,Hull,Ipswich,,,,
-31263,2026-10-31 15:00:00,False,Manchester City,Brighton,,,,
-31264,2026-10-31 15:00:00,False,Bournemouth,Leeds,,,,
-31265,2026-10-31 15:00:00,False,Brentford,Nottingham Forest,,,,
-31266,2026-10-31 17:30:00,False,Tottenham,Crystal Palace,,,,
+31260,2026-10-31 12:30:00,True,Chelsea,Manchester United,2,0,2.78719,1.38641
+31261,2026-10-31 15:00:00,True,Coventry,Sunderland,3,1,0.97327,1.59627
+31262,2026-10-31 15:00:00,True,Hull,Ipswich,2,2,0.606545,1.65783
+31263,2026-10-31 15:00:00,True,Manchester City,Brighton,0,1,2.65713,1.56582
+31264,2026-10-31 15:00:00,True,Bournemouth,Leeds,2,0,1.45653,0.988032
+31265,2026-10-31 15:00:00,True,Brentford,Nottingham Forest,2,0,0.831999,0.958426
+31266,2026-10-31 17:30:00,True,Tottenham,Crystal Palace,2,0,3.71942,0.136935
 31267,2026-10-31 20:00:00,False,Aston Villa,Fulham,,,,
 31268,2026-11-01 16:30:00,False,Liverpool,Arsenal,,,,
 31269,2026-11-02 20:00:00,False,Newcastle United,Everton,,,,
