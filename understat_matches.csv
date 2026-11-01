@@ -87,7 +87,7 @@ id,datetime,is_result,home,away,goals_h,goals_a,xg_h,xg_a
 31265,2026-10-31 15:00:00,True,Brentford,Nottingham Forest,2,0,0.831999,0.958426
 31266,2026-10-31 17:30:00,True,Tottenham,Crystal Palace,2,0,3.71942,0.136935
 31267,2026-10-31 20:00:00,True,Aston Villa,Fulham,1,1,2.24562,2.76757
-31268,2026-11-01 16:30:00,False,Liverpool,Arsenal,,,,
+31268,2026-11-01 16:30:00,True,Liverpool,Arsenal,0,1,1.21488,0.864712
 31269,2026-11-02 20:00:00,False,Newcastle United,Everton,,,,
 31273,2026-11-06 20:00:00,False,Everton,Coventry,,,,
 31276,2026-11-07 12:30:00,False,Leeds,Tottenham,,,,
